@@ -7,18 +7,13 @@ jobs:
           USER_NAME: dixonsiu
           USER_EMAIL: dixon.siu@gmail.com
     working_directory: ~/repo
-    exclude: [vendor]
     steps:
       - checkout
       - run:
           name: install builder
           command : |
             gem install bundler
-      - run: bundle install --path vendor/bundle
-      - run: 
-          name: Link Bundle Path
-          command : |
-            bundle --path vendor/bundle
+      - run: bundle install
       - run:
           name: Precompile Assets
           command: bundle exec jekyll build
