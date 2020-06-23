@@ -2,7 +2,7 @@ version: 2
 jobs:
   deploy:
     docker:
-      - image: circleci/ruby:latest
+      - image: circleci/ruby:2.7.1
         environment:
           USER_NAME: dixonsiu
           USER_EMAIL: dixon.siu@gmail.com
