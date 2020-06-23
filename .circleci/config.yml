@@ -20,9 +20,7 @@ jobs:
       - deploy:
           name: Deploy Release to GitHub
           command: |
-            if [ $CIRCLE_BRANCH == 'source' ]; then
-              bash .circleci/deploy.sh
-            fi
+            bash .circleci/deploy.sh
 workflows:
   version: 2
   build-and-deploy:
