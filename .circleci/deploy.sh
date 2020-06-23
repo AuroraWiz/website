@@ -16,6 +16,6 @@ mv ../_site/* .
 
 git add -fA
 git commit --allow-empty -m "$COMMIT_MESSAGE"
-git push -f origin master
+git push https://"$GITHUB_TOKEN"@github.com/AuroraWiz/AuroraWiz.github.io.git
 
 echo "Deployed successfully"
