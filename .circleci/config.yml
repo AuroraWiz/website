@@ -2,7 +2,7 @@ version: 2
 jobs:
   deploy:
     docker:
-      - image: circleci/ruby:2.7.1
+      - image: circleci/ruby:1.1.6
         environment:
           USER_NAME: dixonsiu
           USER_EMAIL: dixon.siu@gmail.com
@@ -24,7 +24,7 @@ jobs:
             - vendor/bundle
           key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
 
-      - run: JEKYLL_ENV=production bundle exec jekyll build
+      - run: bundle exec jekyll build
       - run:
           name: Test
           command: bundle exec htmlproofer ./_site --check-html --disable-external --empty-alt-ignore
