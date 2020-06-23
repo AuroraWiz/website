@@ -7,6 +7,7 @@ jobs:
           USER_NAME: dixonsiu
           USER_EMAIL: dixon.siu@gmail.com
     working_directory: ~/repo
+    exclude: [vendor]
     steps:
       - checkout
       - run:
