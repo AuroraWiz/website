@@ -6,28 +6,21 @@ jobs:
         environment:
           USER_NAME: dixonsiu
           USER_EMAIL: dixon.siu@gmail.com
+    working_directory: ~/repo
     steps:
       - checkout
       - run:
-          name: install dependencies
-          command: |
-            gem update --system
+          name: install builder
+          command : |
             gem install bundler
-      - restore_cache:
-          keys:
-            - v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-            - v1-gem-cache-{{ arch }}-{{ .Branch }}-
-            - v1-gem-cache-{{ arch }}-
-      - run: bundle install --path=vendor/bundle && bundle clean
-      - save_cache:
-          paths:
-            - vendor/bundle
-          key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-
-      - run: bundle exec jekyll build
+      - run: bundle install --path vendor/bundle
+      - run: 
+          name: Link Bundle Path
+          command : |
+            bundle --path vendor/bundle
       - run:
-          name: Test
-          command: bundle exec htmlproofer ./_site --check-html --disable-external --empty-alt-ignore
+          name: Precompile Assets
+          command: bundle exec jekyll build
       - deploy:
           name: Deploy Release to GitHub
           command: |
@@ -36,10 +29,10 @@ jobs:
             fi
 workflows:
   version: 2
-  build:
+  build-and-deploy:
     jobs:
       - deploy:
           filters:
             branches:
-              only: 
+              only:
                 - master
