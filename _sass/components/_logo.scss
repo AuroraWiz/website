@@ -17,13 +17,11 @@
 
 .logo-mobile {
   display: block;
-  width: 30px;
   @include media-breakpoint-up(sm) {
     display: none;
   }
   img {
-    width: 100%;
-    height: auto;
+    height: 40px;
   }
   a {
     display: block;
