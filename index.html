@@ -54,14 +54,31 @@ bodyClass: page-home
 <div class="container pt-5 pb-5 pt-md-7 pb-md-7">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-4">Our Features</h2>
+      <h2 class="title-3 text-dark">Services</h2>
     </div>
-    {% for feature in site.data.features %}
+    <div class="col-10 text-center mt-2">
+      <h3 class="title-4 text-dark mb-2">Enterprise Data Privacy managementソリューション</h3>
+      <p>ビジネスサイドがデジタルシステム上の個人データの利活用方法を柔軟に対応可能になり、個人ユーザに信頼/安心を提供できるようなデジタルサービスの提供を実現させる</p>
+    </div>
+    {% for service in site.data.services01 %}
     <div class="col-12 col-md-6 col-lg-4 mb-2">
       <div class="feature">
-        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
-        <h2 class="feature-title">{{ feature.title }}</h2>
-        <div class="feature-content">{{ feature.description }}</div>
+        {% if service.image %}<div class="feature-image"><img alt="{{ service.title }} logo" src="{{ service.image }}" /></div> {% endif %}
+        <h2 class="feature-title">{{ service.title }}</h2>
+        <div class="feature-content">{{ service.description }}</div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="col-10 text-center mt-2">
+      <h3 class="title-4 text-dark mb-2">ビジネスデベロップメントハブ</h3>
+      <p>我々は、様々なビジネスサイドのプレイヤー協調するための“Hub”となり、からのデジタルプロダクト/サービスを世の中にTransformationを生み出し続けるための環境作り、実行サポートなどを行う</p>
+    </div>
+    {% for service in site.data.services02 %}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature">
+        {% if service.image %}<div class="feature-image"><img alt="{{ service.title }} logo" src="{{ service.image }}" /></div> {% endif %}
+        <h2 class="feature-title">{{ service.title }}</h2>
+        <div class="feature-content">{{ service.description }}</div>
       </div>
     </div>
     {% endfor %}

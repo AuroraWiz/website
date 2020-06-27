@@ -27,11 +27,27 @@
   font-weight: light;
   color: #333333;
   font-size: 1.6rem;
+  text-align: center;
   @include media-breakpoint-up(sm) {
     font-size: 2rem;
   }
   @include media-breakpoint-up(md) {
     font-size: 2.4rem;
+  }
+  a {
+    display: block;
+  }
+}
+.title-4 {
+  font-family: $font-family-base;
+  font-weight: light;
+  color: #333333;
+  font-size: 1rem;
+  @include media-breakpoint-up(sm) {
+    font-size: 1.6rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
   }
   a {
     display: block;
