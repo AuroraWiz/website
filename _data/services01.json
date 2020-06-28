@@ -1,17 +1,17 @@
 [
   {
-    "title": "個人データ関連デプロイメント",
-    "description": "<ul><li>OSSを活用した個人データオペレーターあるいはPDSの関連SI/APP/API/SDK等のデプロイメント</li><li>ビジネスサイドの既存サービス/アプリなどのプロダクトに個人データ管理機能/ sdkなどをEmbed</li></ul>",
-    "image": "images/features/noun_branding_1885335.svg"
+    "title": "導入/適用の開発",
+    "description": "<ul><li>OSSを活用した個人データオペレーターあるいはPDS（情報銀行）の関連SI/APP/API/SDK等のデプロイメント</li><li>ビジネスサイドの既存サービス/アプリなどのプロダクトに個人データ管理機能/ sdkなどを組込む</li></ul>",
+    "image": "images/services/pds-dev1-1.svg"
   },
   {
     "title": "MyData アドバイザリー",
     "description": "<ul><li>グローバル個人データ管理促進NGO組織のMyData Globalの考えをベースとしたdata privacy scheme デザイン/構築に対するアドバイザリー</li></ul>",
-    "image": "images/features/noun_The Process_1885341.svg"
+    "image": "images/services/advice1-2.svg"
   },
   {
-    "title": "グローバルコミュニティの発信代行",
+    "title": "専門コミュニティでの発信代行",
     "description": "<ul><li>MyData Globalなどのグローバル個人データ管理促進コミュニティとのリレーション構築/発信等の活動代行</li></ul>",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "image": "images/services/community1-3.svg"
   }
 ]
