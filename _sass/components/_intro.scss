@@ -20,7 +20,8 @@
     color: $primary;
     font-size: 2.4rem;
     line-height: 1.2;
-    font-family: $font-family-heading;
+    font-family: 'Roboto Slab', serif;
+    //font-family: $font-family-heading;
     width: 70%;
     @include media-breakpoint-up(sm) {
       width: 70%;
@@ -49,6 +50,9 @@
     @include media-breakpoint-up(lg) {
       width: 40%;
     }
+  }
+  p.bold {
+    font-weight: 700;
   }
 }
 .intro-small {
