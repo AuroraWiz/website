@@ -3,15 +3,14 @@ title: Team
 layout: default
 bodyClass: page-team-list
 ---
-
+<script src="https://kit.fontawesome.com/e0c4b436f2.js" crossorigin="anonymous"></script>
 <div class="intro">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h1>Meet The Team</h1>
-        <p>
-          Our team of qualified accountants and financial consultants can help
-          your business at any stage of it's growth.
+        <p  class="bold">
+          企業の個人データマネジメントを簡単かつ安全にし、デジタル時代のビジネス変革のドライバーに
         </p>
       </div>
     </div>
@@ -36,7 +35,10 @@ bodyClass: page-team-list
           <h2 class="team-name">{{ team.title }}</h2>
           <p class="team-description">{{ team.jobtitle }}</p>
           {% if team.linkedinurl %}
-          <a target="_blank" href="{{ team.linkedinurl }}">LinkedIn</a> 
+          <a target="_blank" href="{{ team.linkedinurl }}"><i class="fab fa-linkedin fa-2x"></i></a> 
+          {% endif %}
+          {% if team.twitterurl %}
+          <a target="_blank" href="{{ team.twitterurl }}"><i class="fab fa-twitter-square fa-2x"></i></a> 
           {% endif %}
         </div>
         <div class="team-content">{{ team.content }}</div>
