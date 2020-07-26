@@ -1,6 +1,5 @@
 .partner {
   height: 100%;
-  border: 2px solid #eaeaea;
   padding: 20px;
   background-color: #ffffff;
   display: flex;
@@ -10,7 +9,6 @@
   .partner-image {
     flex: 0 0 auto;
     display: flex;
-    margin-bottom: 20px;
     text-align: center;
   }
   img {

@@ -1,12 +1,14 @@
 ---
 title: 'Dixon Siu'
 image: '/images/team/dixon-siu.jpg'
-jobtitle: 'Founder/MyData Global Founding Member'
+jobtitle: 'Co-founder'
 email: 'dixon.siu@gmail.com'
 linkedinurl: 'https://www.linkedin.com/in/dixonsiu/'
 twitterurl: 'https://twitter.com/dixon_siu'
 ---
 
-Dixon is a MyData activist. After attending MyData 2018, he was moved by the passionate people involved in MyData and now heavily involved in the MyData movement both globally and in Asia. He co-founded the [Asia Hub](https://mydataasia.org).
-
-For the past two years, he has been developing apps for Personium which is the only open-source personal data store platform in Japan. As the Personium Chief Evangelist, he created uncountable opportunities that fostered joint projects with other communities.
+- McGill大学（カナダ）、早稲田大学大学院卒  
+- グローバルIT会社複数社にてソフトウェア / オープンソース開発 / デザイン、プロダクトマネージャーなど従事、またオープンソースにてグローバル展開 / エコシステム構築をリード  
+- 世界中とアジアの両方でMyData運動に深く関わおり、アジアハブを共同設立  
+- MyData Global [Founding Member](https://mydata.org/founders/) / MyData Japan Hub Initiator / [MyData Aisa Hub co-founder](https://mydataasia.org)  
+- [Personuim](https://personium.io) チーフエバンジェリスト  
