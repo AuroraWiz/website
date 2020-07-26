@@ -64,9 +64,11 @@ bodyClass: page-home
     {% for partner in site.data.partners %}
     <div class="col-12 col-md-6 col-lg-4 mb-2">
       <div class="partner">
-        {% if partner.image %}<div class="partner-image"><img alt="{{ partner.name }} logo" src="{{ partner.image }}" /></div> {% endif %}
-        <h2 class="partner-title">{{ partner.name }}</h2>
-        <div class="partner-content">{{ partner.url }}</div>
+        {% if partner.url %}
+        <a target="_blank" href="{{ partner.url }}">
+          {% if partner.image %}<div class="partner-image"><img alt="{{ partner.name }} logo" src="{{ partner.image }}" /></div> {% endif %}
+        </a>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
